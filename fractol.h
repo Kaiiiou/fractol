@@ -1,13 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mandelbrot.c                                       :+:      :+:    :+:   */
+/*   fractol.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amarti <amarti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/06/12 14:35:52 by amarti            #+#    #+#             */
-/*   Updated: 2025/06/16 16:08:06 by amarti           ###   ########.fr       */
+/*   Created: 2025/06/16 16:04:13 by amarti            #+#    #+#             */
+/*   Updated: 2025/06/16 20:41:46 by amarti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#pragma once
+
+#include <unistd.h>
+#include <stdlib.h>
+#include "libft.h"
+// #include "minilbx"
+#include <stdio.h>
