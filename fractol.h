@@ -6,7 +6,7 @@
 /*   By: amarti <amarti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/16 16:04:13 by amarti            #+#    #+#             */
-/*   Updated: 2025/06/17 19:59:28 by amarti           ###   ########.fr       */
+/*   Updated: 2025/06/17 21:05:31 by amarti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,3 +49,5 @@ int		mandelbrot_set(double x, double y);
 int		julia_set(double x, double y, double julia_x, double julia_y);
 void	init_fractal(t_fractal *fractal, int type);
 double	map(double unscaled_num, double nw_min, double nw_max, double old_max);
+int		mandelbrot_set(double x, double y);
+int julia_set(double x, double y, double julia_x, double julia_y);

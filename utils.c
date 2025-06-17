@@ -6,7 +6,7 @@
 /*   By: amarti <amarti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 14:36:26 by amarti            #+#    #+#             */
-/*   Updated: 2025/06/17 19:59:28 by amarti           ###   ########.fr       */
+/*   Updated: 2025/06/17 20:09:57 by amarti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,5 +81,14 @@ void	init_fractal(t_fractal *fractal, int type)
 }
 double map(double unscaled_num, double nw_min, double nw_max, double old_max)
 {
+	double largeur_totale;
+	double pourcentage;
+	double decalage;
+	double resultat;
 
+	largeur_totale = nw_max - nw_min;
+	pourcentage = unscaled_num / old_max;
+	decalage = largeur_totale * pourcentage;
+	resultat = nw_min + decalage;
+	return (resultat);
 }
