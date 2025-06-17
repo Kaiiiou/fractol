@@ -6,7 +6,7 @@
 /*   By: amarti <amarti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 14:36:26 by amarti            #+#    #+#             */
-/*   Updated: 2025/06/17 20:09:57 by amarti           ###   ########.fr       */
+/*   Updated: 2025/06/17 21:54:10 by amarti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,4 +91,12 @@ double map(double unscaled_num, double nw_min, double nw_max, double old_max)
 	decalage = largeur_totale * pourcentage;
 	resultat = nw_min + decalage;
 	return (resultat);
+}
+
+uint32_t calculate_color(int iterations)
+{
+	if (iterations == MAX_ITERATIONS)
+		return (0x000000FF); // noir
+	else
+		return (0xFF0000FF); // rouge
 }
