@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kai-iou <kai-iou@student.42.fr>            +#+  +:+       +#+        */
+/*   By: amarti <amarti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 14:36:26 by amarti            #+#    #+#             */
-/*   Updated: 2025/06/18 01:44:19 by kai-iou          ###   ########.fr       */
+/*   Updated: 2025/06/19 20:09:43 by amarti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,17 +79,17 @@ void	init_fractal(t_fractal *fractal, int type)
 		exit(1);
 	}
 }
-double map(double unscaled_num, double nw_min, double nw_max, double old_max)
+double map(double unscalednum, double nwmin, double nwmax, double oldmax)
 {
 	double largeur_totale;
 	double pourcentage;
 	double decalage;
 	double resultat;
 
-	largeur_totale = nw_max - nw_min;
-	pourcentage = unscaled_num / old_max;
+	largeur_totale = nwmax - nwmin;
+	pourcentage = unscalednum / oldmax;
 	decalage = largeur_totale * pourcentage;
-	resultat = nw_min + decalage;
+	resultat = nwmin + decalage;
 	return (resultat);
 }
 

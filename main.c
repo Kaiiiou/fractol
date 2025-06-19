@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kai-iou <kai-iou@student.42.fr>            +#+  +:+       +#+        */
+/*   By: amarti <amarti@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/12 14:35:36 by amarti            #+#    #+#             */
-/*   Updated: 2025/06/18 01:35:11 by kai-iou          ###   ########.fr       */
+/*   Updated: 2025/06/19 20:10:59 by amarti           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-void fractal_render(t_fractal *fractal)
+void	fractal_render(t_fractal *fractal)
 {
 	int		x;
 	int		y;
@@ -53,7 +53,7 @@ int	main(int argc, char **argv)
 
 	if (2 == argc && !ft_strncmp(argv[1], "mandelbrot", 10))
 		init_fractal(&fractal, MANDELBROT);
-	else if(4 == argc && !ft_strncmp(argv[1], "julia", 5))
+	else if (4 == argc && !ft_strncmp(argv[1], "julia", 5))
 	{
 		init_fractal(&fractal, JULIA);
 		fractal.julia_x = atodbl(argv[2]);
